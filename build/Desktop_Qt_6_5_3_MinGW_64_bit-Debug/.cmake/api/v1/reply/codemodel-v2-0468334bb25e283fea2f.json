@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-4f6a6d783a85c224d195.json",
+					"jsonFile" : "directory-.-Debug-4ed8b0157ad0314ffda6.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "HarryPoter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HarryPoter-Debug-1a11efc6865e0f5197a6.json",
+					"jsonFile" : "target-HarryPoter-Debug-0a0e433edac271211507.json",
 					"name" : "HarryPoter",
 					"projectIndex" : 0
 				},

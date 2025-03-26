@@ -76,7 +76,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -268,7 +268,7 @@
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 17,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -373,11 +373,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "HarryPoter_autogen::@6890427a1f51a3e7e1df"
+			"id" : "HarryPoter_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "HarryPoter_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "HarryPoter_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "HarryPoter::@6890427a1f51a3e7e1df",
@@ -492,7 +492,7 @@
 			"sourceIndexes" : 
 			[
 				3,
-				6
+				5
 			]
 		},
 		{
@@ -506,15 +506,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				5,
-				7
+				6
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				8
+				7
 			]
 		}
 	],
@@ -548,11 +547,6 @@
 			"backtrace" : 4,
 			"path" : "mywidget.ui",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : ".gitignore",
-			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,

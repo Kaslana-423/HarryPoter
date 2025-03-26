@@ -343,5 +343,7 @@ C:/Users/21397/Documents/HarryPoter/mywidget.h
  mdp:C:/Users/21397/Documents/HarryPoter/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/HarryPoter_autogen/moc_predefs.h
  mdp:C:/Users/21397/Documents/HarryPoter/mywidget.h
 C:/Users/21397/Documents/HarryPoter/main.cpp
+C:/Users/21397/Documents/HarryPoter/search.h
 C:/Users/21397/Documents/HarryPoter/mywidget.cpp
  uic:ui_mywidget.h
+C:/Users/21397/Documents/HarryPoter/search.cpp

@@ -12,6 +12,7 @@ qt_add_executable(HarryPoter
     mywidget.h
     mywidget.ui
 
+
 )
 
 target_link_libraries(HarryPoter

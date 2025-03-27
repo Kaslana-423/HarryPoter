@@ -38,5 +38,9 @@ private:
     QStringList headers;
     QString bookTitle;
     QString defaultPath;
+    QString currentPara;
+    QString prevPara;
+    QString contentText;
+    QString nextPara;
 };
 #endif // MYWIDGET_H

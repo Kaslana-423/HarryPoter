@@ -76,21 +76,6 @@ bool isNumber(const std::string &s) {
 }
 
 
-vector<int>bruteForce(const std::string &T,std::string &P){
-    std::vector<int> result;
-    for(int i=0;i<int(T.size()-P.size()+1);i++){
-        bool isOK =true;
-        for(int j=0;j<int(P.size());j++){
-            if(T[i+j]!=P[j]){
-                isOK=false;
-                break;
-            }
-        }
-        if(isOK) result.push_back(i);
-    }
-    return result;
-}
-
 void myWidget::on_btnSearch_clicked()
 {
 
@@ -170,20 +155,33 @@ void myWidget::on_btnSearch_clicked()
     }
 
 }
-
-
-
 void myWidget::on_tableWidgetResults_cellClicked(int row, int column)
 {
-    // 获取选中行的文本（假设匹配的文本在第3列）
-    QTableWidgetItem *item = ui->tableWidgetResults->item(row, 4);
-    if (!item)
-        return;
+    QString combinedText;
 
-    // 获取当前行的文本
-    QString matchedLine = item->text();
+    // 获取上一行的内容（如果存在）
+    if (row > 0) {
+        QTableWidgetItem *prevItem = ui->tableWidgetResults->item(row - 1, 4);
+        if (prevItem) {
+            combinedText.append("上一行: " + prevItem->text() + "\n");
+        }
+    }
 
-    // 在 tbLog 显示当前行内容
-    ui->tbLog->setPlainText(matchedLine);
+    // 获取当前行的内容
+    QTableWidgetItem *currentItem = ui->tableWidgetResults->item(row, 4);
+    if (currentItem) {
+        combinedText.append("当前行: " + currentItem->text() + "\n");
+    }
+
+    // 获取下一行的内容（如果存在）
+    if (row < ui->tableWidgetResults->rowCount() - 1) {
+        QTableWidgetItem *nextItem = ui->tableWidgetResults->item(row + 1, 4);
+        if (nextItem) {
+            combinedText.append("下一行: " + nextItem->text());
+        }
+    }
+
+    // 将合并后的内容显示在日志框中
+    ui->tbLog->setPlainText(combinedText);
 }
 
